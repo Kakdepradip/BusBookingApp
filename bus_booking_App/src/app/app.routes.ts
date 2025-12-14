@@ -15,10 +15,11 @@ export const routes: Routes = [
     path: 'search',
     component: Search,
   },
-  {
-    path: "search-result/:from",
-    component: SearchResult,
-  },
+ {
+  path: 'search-result/:from/:to/:date',
+  component: SearchResult
+},
+
   {
     path: 'book-tickit',
     component: BookTicket,

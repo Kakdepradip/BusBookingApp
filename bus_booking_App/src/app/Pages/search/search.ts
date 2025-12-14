@@ -30,7 +30,12 @@ export class Search implements OnInit {
       });
   }
   searchBus() {
-    this.router.navigateByUrl("search-result/"+this.searchobj.fromLocationId)
+    this.router.navigate([
+    '/search-result',
+    this.searchobj.fromLocationId,
+    this.searchobj.toLocationId,
+    this.searchobj.date
+  ]);
   /**  this.http
       .get(
         'https://api.freeprojectapi.com/api/BusBooking/searchBus2?fromLocation=' +

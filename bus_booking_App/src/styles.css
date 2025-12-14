@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background-color: #95dce6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.logo img {
+  width:140px;
+  height:40px;
+  border-radius: 15px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Login Button */
+.login-btn {
+  padding: 8px 18px;
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #084298;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .logo span {
+    font-size: 16px;
+  }
+
+  .login-btn {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+}
